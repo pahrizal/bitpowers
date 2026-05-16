@@ -34,64 +34,47 @@ Installation differs by harness. If you use more than one, install Bitpowers sep
 
 ### Claude Code
 
-Bitpowers is available via the [official Claude plugin marketplace](https://claude.com/plugins/bitpowers)
+Bitpowers is **not** published to Anthropic's Claude plugin marketplace. Install from this repository instead.
 
-#### Official Marketplace
+1. Clone [pahrizal/bitpowers](https://github.com/pahrizal/bitpowers):
 
-- Install the plugin from Anthropic's official marketplace:
+   ```bash
+   git clone https://github.com/pahrizal/bitpowers.git
+   ```
 
-  ```bash
-  /plugin install bitpowers@claude-plugins-official
-  ```
+2. Wire Claude Code to this checkout. This repo includes `.claude-plugin/marketplace.json` (`bitpowers-dev`) for local use: register that development marketplace in Claude Code (path to your clone), then enable `bitpowers@bitpowers-dev` in `~/.claude/settings.json`. Integration-test notes and troubleshooting live in [docs/testing.md](docs/testing.md).
 
-#### Bitpowers Marketplace
-
-The Bitpowers marketplace provides Bitpowers and some other related plugins for Claude Code.
-
-- Register the marketplace:
-
-  ```bash
-  /plugin marketplace add bit/bitpowers-marketplace
-  ```
-
-- Install the plugin from this marketplace:
-
-  ```bash
-  /plugin install bitpowers@bitpowers-marketplace
-  ```
+Exact `/plugin` commands differ by Claude Code version; use whichever UI or CLI flow your build documents for **local** or **GitHub** plugins.
 
 ### Codex CLI
 
-Bitpowers is available via the [official Codex plugin marketplace](https://github.com/openai/plugins).
+Bitpowers is **not** published to OpenAI's Codex plugin marketplace. Install from this repository instead.
 
-- Open the plugin search interface:
+1. Clone [pahrizal/bitpowers](https://github.com/pahrizal/bitpowers):
 
-  ```bash
-  /plugins
-  ```
+   ```bash
+   git clone https://github.com/pahrizal/bitpowers.git
+   ```
 
-- Search for Bitpowers:
+2. Expose the plugin to Codex using **local discovery** (Codex discovers plugins under `~/.agents/skills/`). For example, symlink your checkout:
 
-  ```bash
-  bitpowers
-  ```
+   ```bash
+   mkdir -p ~/.agents/skills
+   ln -sf /absolute/path/to/bitpowers ~/.agents/skills/bitpowers
+   ```
 
-- Select `Install Plugin`.
+   Exact layout can vary by Codex version—confirm paths in the current [Codex / OpenAI plugins documentation](https://github.com/openai/plugins).
 
 ### Codex App
 
-Bitpowers is available via the [official Codex plugin marketplace](https://github.com/openai/plugins).
-
-- In the Codex app, click on Plugins in the sidebar.
-- You should see `Bitpowers` in the Coding section.
-- Click the `+` next to Bitpowers and follow the prompts.
+Bitpowers is **not** listed in the Codex App plugin marketplace. Install from a **local checkout** or **Git URL** using whatever “install plugin from disk / custom source” flow your Codex App build supports; point it at this repository once cloned.
 
 ### Factory Droid
 
 - Register the marketplace:
 
   ```bash
-  droid plugin marketplace add https://github.com/bit/bitpowers
+  droid plugin marketplace add https://github.com/pahrizal/bitpowers
   ```
 
 - Install the plugin:
@@ -105,7 +88,7 @@ Bitpowers is available via the [official Codex plugin marketplace](https://githu
 - Install the extension:
 
   ```bash
-  gemini extensions install https://github.com/bit/bitpowers
+  gemini extensions install https://github.com/pahrizal/bitpowers
   ```
 
 - Update later:
@@ -122,7 +105,7 @@ already use it in another harness.
 - Tell OpenCode:
 
   ```
-  Fetch and follow instructions from https://raw.githubusercontent.com/bit/bitpowers/refs/heads/main/.opencode/INSTALL.md
+  Fetch and follow instructions from https://raw.githubusercontent.com/pahrizal/bitpowers/refs/heads/main/.opencode/INSTALL.md
   ```
 
 - Detailed docs: [docs/README.opencode.md](docs/README.opencode.md)
@@ -139,17 +122,7 @@ already use it in another harness.
 
 ### GitHub Copilot CLI
 
-- Register the marketplace:
-
-  ```bash
-  copilot plugin marketplace add bit/bitpowers-marketplace
-  ```
-
-- Install the plugin:
-
-  ```bash
-  copilot plugin install bitpowers@bitpowers-marketplace
-  ```
+Bitpowers is **not** published to Copilot's plugin marketplace. Install from a **local checkout** or whatever Git-backed / path-based plugin flow your Copilot CLI version supports—this repo is meant to be loaded as a plugin from disk (see Copilot CLI plugin docs for the current syntax).
 
 ## The Basic Workflow
 
@@ -229,5 +202,5 @@ MIT License - see LICENSE file for details
 Bitpowers is built by [Jesse Vincent](https://blog.fsck.com) and the rest of the folks at [Prime Radiant](https://primeradiant.com).
 
 - **Discord**: [Join us](https://discord.gg/35wsABTejz) for community support, questions, and sharing what you're building with Bitpowers
-- **Issues**: https://github.com/bit/bitpowers/issues
+- **Issues**: https://github.com/pahrizal/bitpowers/issues
 - **Release announcements**: [Sign up](https://primeradiant.com/bitpowers/) to get notified about new versions

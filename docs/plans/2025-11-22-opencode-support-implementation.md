@@ -780,7 +780,7 @@ git commit -m "feat: implement session.started hook for opencode"
 ```bash
 # Clone bitpowers skills to OpenCode config directory
 mkdir -p ~/.config/opencode/bitpowers
-git clone https://github.com/bit/bitpowers.git ~/.config/opencode/bitpowers
+git clone https://github.com/pahrizal/bitpowers.git ~/.config/opencode/bitpowers
 ```
 
 ### 2. Install the Plugin
@@ -878,8 +878,8 @@ When a skill references a Claude Code tool you don't have:
 
 ## Getting Help
 
-- Report issues: https://github.com/bit/bitpowers/issues
-- Documentation: https://github.com/bit/bitpowers
+- Report issues: https://github.com/pahrizal/bitpowers/issues
+- Documentation: https://github.com/pahrizal/bitpowers
 ```
 
 **Step 2: Verify file created**

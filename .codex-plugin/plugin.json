@@ -7,8 +7,8 @@
     "email": "jesse@fsck.com",
     "url": "https://github.com/obra"
   },
-  "homepage": "https://github.com/bit/bitpowers",
-  "repository": "https://github.com/bit/bitpowers",
+  "homepage": "https://github.com/pahrizal/bitpowers",
+  "repository": "https://github.com/pahrizal/bitpowers",
   "license": "MIT",
   "keywords": [
     "brainstorming",
@@ -36,7 +36,7 @@
       "I've got an idea for something I'd like to build.",
       "Let's add a feature to this project."
     ],
-    "websiteURL": "https://github.com/bit/bitpowers",
+    "websiteURL": "https://github.com/pahrizal/bitpowers",
     "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
     "termsOfServiceURL": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
     "brandColor": "#F59E0B",

@@ -8,7 +8,7 @@ Add bitpowers to the `plugin` array in your `opencode.json` (global or project-l
 
 ```json
 {
-  "plugin": ["bitpowers@git+https://github.com/bit/bitpowers.git"]
+  "plugin": ["bitpowers@git+https://github.com/pahrizal/bitpowers.git"]
 }
 ```
 
@@ -91,7 +91,7 @@ To pin a specific version, use a branch or tag:
 
 ```json
 {
-  "plugin": ["bitpowers@git+https://github.com/bit/bitpowers.git#v5.0.3"]
+  "plugin": ["bitpowers@git+https://github.com/pahrizal/bitpowers.git#v5.0.3"]
 }
 ```
 
@@ -128,7 +128,7 @@ the plugin, try installing with system npm and pointing OpenCode at the local
 package:
 
 ```powershell
-npm install bitpowers@git+https://github.com/bit/bitpowers.git --prefix "$HOME\.config\opencode"
+npm install bitpowers@git+https://github.com/pahrizal/bitpowers.git --prefix "$HOME\.config\opencode"
 ```
 
 Then use the installed package path in `opencode.json`:
@@ -152,6 +152,6 @@ Then use the installed package path in `opencode.json`:
 
 ## Getting Help
 
-- Report issues: https://github.com/bit/bitpowers/issues
-- Main documentation: https://github.com/bit/bitpowers
+- Report issues: https://github.com/pahrizal/bitpowers/issues
+- Main documentation: https://github.com/pahrizal/bitpowers
 - OpenCode docs: https://opencode.ai/docs/

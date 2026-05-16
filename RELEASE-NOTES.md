@@ -1120,7 +1120,7 @@ This release includes:
 
 ```bash
 # In Claude Code
-/plugin marketplace add bit/bitpowers-marketplace
+/plugin marketplace add pahrizal/bitpowers-marketplace
 /plugin install bitpowers@bitpowers-marketplace
 ```
 
@@ -1175,6 +1175,6 @@ None at this time.
 
 ---
 
-**Full Changelog:** https://github.com/bit/bitpowers/compare/dd013f6...main
+**Full Changelog:** https://github.com/pahrizal/bitpowers/compare/dd013f6...main
 **Skills Repository:** https://github.com/obra/superpowers-skills
-**Issues:** https://github.com/bit/bitpowers/issues
+**Issues:** https://github.com/pahrizal/bitpowers/issues
